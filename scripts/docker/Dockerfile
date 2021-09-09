@@ -54,7 +54,8 @@ RUN apt-get update && apt-get install --assume-yes \
 	vim \
 	wget \
 	xmlstarlet \
-	zip
+	zip \
+	libncurses-dev
 
 # Install virtualbox from upstream because it's not available in debian 9
 RUN echo 'deb http://download.virtualbox.org/virtualbox/debian stretch contrib' > /etc/apt/sources.list.d/virtualbox.list
